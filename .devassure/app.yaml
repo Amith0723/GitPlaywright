@@ -1,0 +1,12 @@
+# App Configuration
+# This file contains the description of the web application
+# Documentation: https://www.npmjs.com/package/@devassure/cli
+# Example:
+# description: >
+#   about my app
+#   in multi line
+# rules:
+#   - User can't create more than 3 projects
+#   - Any data deleted can't be restored
+
+description: SAAS application for salons

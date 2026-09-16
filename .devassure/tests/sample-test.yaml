@@ -1,0 +1,18 @@
+# Sample Test Case
+# Each test case should have steps array, rest are optional
+# Documentation: https://www.npmjs.com/package/@devassure/cli
+# Fields:
+# - summary: Summary of the test case
+# - steps: Steps to be executed in the test case
+# - priority: Priority of the test case (P0, P1, P2, P3 / critical, high, medium, low)
+# - tags: Tags for the test case
+#
+summary: Sample test case
+steps:
+  - Open the application url
+  - Verify if the page loads successfully
+  - Verify if there are no error messages
+priority: P1
+tags:
+  - sample
+  - ui

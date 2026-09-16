@@ -1,0 +1,52 @@
+"Test ID","Module","Test Scenario Description","Preconditions","Test Steps","Test Data","Expected Result","Execution Type","Status"
+"TC_BV_001","Bookings - Authentication","Verify successful login and landing on Home dashboard before booking operations","Valid business owner credentials exist","1. Navigate to https://devbiz.zylu.co/
+2. Select Email & Password tab
+3. Enter valid Email Address
+4. Enter valid Password
+5. Click Sign In button","URL: https://devbiz.zylu.co/
+Email: test_automation_owner@zylu.co
+Password: valid_password","User is successfully authenticated and redirected to the Home dashboard (/#/home)","Automated (Playwright)","Pass"
+"TC_BV_002","Bookings - Navigation","Verify navigation to Bookings management module","User is logged in on Home screen","1. Click on Bookings option in the sidebar navigation
+2. If sidebar is collapsed or not visible, navigate directly to /#/bookings
+3. Wait for Bookings screen to load","URL: /#/bookings","Bookings module loads successfully and URL updates to /#/bookings with view controls displayed","Automated (Playwright)","Pass"
+"TC_BV_003","Bookings - View Toggle","Verify switching between Calendar View and List View","User is on Bookings screen","1. Check the active view mode
+2. If toggle button displays 'List View', click on it
+3. Verify view switches to table/list format","Toggle: 'List View'","Bookings are rendered in a tabular list view displaying columns for ID, Date, Customer, Staff, Status, Amount, and Actions","Automated (Playwright)","Pass"
+"TC_BV_004","Bookings - List View Data Display","Verify booking row displays correct booking information in List View","List View has at least one booking row","1. Locate the first booking row in List View
+2. Verify Booking ID is present (e.g. #8440)
+3. Verify Date & Time format (e.g. DD/MM/YYYY hh:mm AM/PM)
+4. Verify Customer name is displayed
+5. Verify Staff member name is displayed
+6. Verify Status badge (e.g. Completed, Voided, Confirmed)
+7. Verify Amount with currency symbol (e.g. ₹150.00)","Sample Row Data:
+Date: 11/9/2026 04:46 PM
+Customer: Customer_5512
+Staff: Dhruv Salat
+Status: Completed
+Amount: ₹150.00","All booking row attributes are displayed clearly and properly formatted in their respective columns","Automated (Playwright)","Pass"
+"TC_BV_005","Bookings - Action Menu","Verify clicking three dots (⋮) button opens contextual action menu","At least one booking row visible in List View","1. Identify target booking row
+2. Locate the three dots (Show menu) button at the right end of the row
+3. Click the three dots button","Button: 'Show menu'","Contextual popup menu appears displaying options: View Details, Generate Invoice, Share, Copy Booking, Add Todo","Automated (Playwright)","Pass"
+"TC_BV_006","Bookings - Action Menu Options","Verify all expected menu options are present in the row actions popup","Three dots popup menu is currently open","1. Inspect visible options in the popup menu
+2. Confirm presence of:
+   - View Details
+   - Generate Invoice
+   - Share
+   - Copy Booking
+   - Add Todo","Menu Items: View Details, Generate Invoice, Share, Copy Booking, Add Todo","All standard booking actions are rendered, enabled, and clickable","Automated (Playwright)","Pass"
+"TC_BV_007","Bookings - View Details Modal","Verify clicking 'View Details' opens the comprehensive Booking Details screen","Three dots menu is open","1. Click on 'View Details' menu item
+2. Wait for the dialog/modal to open
+3. Verify modal header and dialog elements","Menu item: 'View Details'","Booking Details dialog opens displaying modal title 'Booking', close/back button, and full details container","Automated (Playwright)","Pass"
+"TC_BV_008","Bookings - Details Data Consistency","Verify Booking Details modal data matches the selected list view row","Booking Details modal is open","1. Retrieve Booking ID from details and compare with list row
+2. Retrieve Customer Name and compare with list row
+3. Retrieve Booking Status and compare with list row
+4. Retrieve Staff Name and compare with list row
+5. Retrieve Total Amount and compare with list row","Target: Booking #8440
+Customer: Customer_5512
+Status: Completed","All details shown in the details view exactly match the data shown on the list view row and backend API record","Automated (Playwright)","Pass"
+"TC_BV_009","Bookings - Store & Location Details","Verify salon branch and location information are displayed in Booking Details view","Booking Details modal is open","1. Check the store name banner
+2. Check the store address section","Store: The Comfort Zone Spa - Org1 /Premium
+Location: At Store, Rajajinagar, Bengaluru","Store name and complete physical address are accurately rendered in the booking header","Automated (Playwright)","Pass"
+"TC_BV_010","Bookings - Responsive & Layout Validation","Verify booking details UI elements do not overflow or misalign on desktop resolutions","Browser at 1280x720 or higher","1. Open Booking Details view
+2. Inspect cards: Contact Customer, Booking Details, Payment Summary, Booking Notes
+3. Check scrollability if content exceeds viewport","Viewport: 1280x720","All cards and text fields fit within viewport or are smoothly scrollable without horizontal layout breakages","Automated (Playwright)","Pass"

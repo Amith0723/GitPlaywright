@@ -1,0 +1,19 @@
+# Personas Configuration
+# This file defines the personas for the web application
+# Each persona represents a user type with specific characteristics
+# Documentation: https://www.npmjs.com/package/@devassure/cli
+# Example:
+# normal_user:
+#   description: No admin access can do all other operations
+#   age_group: 18-30
+#   gender: M
+#   region: USA
+# admin:
+#   description: Admin can add or delete other user and other manage privilages
+# deactivated_user:
+#   description: Login is deactivated by admin
+# expired_user:
+#   description: License has expired
+
+owner:
+  description: full

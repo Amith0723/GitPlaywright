@@ -1,0 +1,9 @@
+# Agent Instructions Configuration
+# This file contains instructions for the agent to follow during testing
+# Documentation: https://www.npmjs.com/package/@devassure/cli
+# Example:
+# instructions:
+#   - Reload the app and retry if app shows warning server is busy
+#   - Signup a new user and proceed if any of the give login is not working
+
+instructions: []

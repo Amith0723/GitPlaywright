@@ -1,0 +1,562 @@
+[
+  {
+    "tag": "FLT-SEMANTICS",
+    "role": null,
+    "ariaLabel": null,
+    "innerText": "Book Service\nReset\nSort\nNew\n10/9/2026\n12:35 PM\nService\nProduct\nPackage\nMembership\nWallet Balance\nGif",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 800,
+      "top": 0,
+      "right": 1280,
+      "bottom": 800,
+      "left": 0
+    }
+  },
+  {
+    "tag": "FLT-SEMANTICS",
+    "role": null,
+    "ariaLabel": null,
+    "innerText": "Book Service\nReset\nSort\nNew\n10/9/2026\n12:35 PM\nService\nProduct\nPackage\nMembership\nWallet Balance\nGif",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 800,
+      "top": 0,
+      "right": 1280,
+      "bottom": 800,
+      "left": 0
+    }
+  },
+  {
+    "tag": "FLT-SEMANTICS",
+    "role": null,
+    "ariaLabel": null,
+    "innerText": "Book Service\nReset\nSort\nNew\n10/9/2026\n12:35 PM\nService\nProduct\nPackage\nMembership\nWallet Balance\nGif",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 800,
+      "top": 0,
+      "right": 1280,
+      "bottom": 800,
+      "left": 0
+    }
+  },
+  {
+    "tag": "FLT-SEMANTICS",
+    "role": "dialog",
+    "ariaLabel": null,
+    "innerText": "Book Service\nReset\nSort\nNew\n10/9/2026\n12:35 PM\nService\nProduct\nPackage\nMembership\nWallet Balance\nGif",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 800,
+      "top": 0,
+      "right": 1280,
+      "bottom": 800,
+      "left": 0
+    }
+  },
+  {
+    "tag": "FLT-SEMANTICS",
+    "role": null,
+    "ariaLabel": null,
+    "innerText": "Book Service",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 56,
+      "top": 0,
+      "right": 1280,
+      "bottom": 56,
+      "left": 0
+    }
+  },
+  {
+    "tag": "FLT-SEMANTICS",
+    "role": null,
+    "ariaLabel": null,
+    "innerText": "Reset\nSort\nNew\n10/9/2026\n12:35 PM\nService\nProduct\nPackage\nMembership\nWallet Balance\nGift Card\n%\nAppl",
+    "rect": {
+      "x": 0,
+      "y": 56,
+      "width": 1280,
+      "height": 643,
+      "top": 56,
+      "right": 1280,
+      "bottom": 699,
+      "left": 0
+    }
+  },
+  {
+    "tag": "FLT-SEMANTICS",
+    "role": "group",
+    "ariaLabel": null,
+    "innerText": "Reset\nSort\nNew\n10/9/2026\n12:35 PM\nService\nProduct\nPackage\nMembership\nWallet Balance\nGift Card\n%\nAppl",
+    "rect": {
+      "x": 0,
+      "y": 56,
+      "width": 1280,
+      "height": 643,
+      "top": 56,
+      "right": 1280,
+      "bottom": 699,
+      "left": 0
+    }
+  },
+  {
+    "tag": "FLT-SEMANTICS",
+    "role": "group",
+    "ariaLabel": "*  \nBooking At\nManager",
+    "innerText": "Reset\nSort\nNew\n10/9/2026\n12:35 PM",
+    "rect": {
+      "x": 0,
+      "y": 56,
+      "width": 1280,
+      "height": 173,
+      "top": 56,
+      "right": 1280,
+      "bottom": 229,
+      "left": 0
+    }
+  },
+  {
+    "tag": "FLT-SEMANTICS",
+    "role": "tab",
+    "ariaLabel": "Booking",
+    "innerText": "",
+    "rect": {
+      "x": 123,
+      "y": 72,
+      "width": 108.703125,
+      "height": 48,
+      "top": 72,
+      "right": 231.703125,
+      "bottom": 120,
+      "left": 123
+    }
+  },
+  {
+    "tag": "FLT-SEMANTICS",
+    "role": "tab",
+    "ariaLabel": "Walk-in",
+    "innerText": "",
+    "rect": {
+      "x": 231.71376037597656,
+      "y": 72,
+      "width": 107.89060974121094,
+      "height": 48,
+      "top": 72,
+      "right": 339.6043701171875,
+      "bottom": 120,
+      "left": 231.71376037597656
+    }
+  },
+  {
+    "tag": "FLT-SEMANTICS",
+    "role": "button",
+    "ariaLabel": null,
+    "innerText": "Reset",
+    "rect": {
+      "x": 1152.192138671875,
+      "y": 80,
+      "width": 86.796875,
+      "height": 32,
+      "top": 80,
+      "right": 1238.989013671875,
+      "bottom": 112,
+      "left": 1152.192138671875
+    }
+  },
+  {
+    "tag": "FLT-SEMANTICS",
+    "role": null,
+    "ariaLabel": null,
+    "innerText": "Sort",
+    "rect": {
+      "x": 41,
+      "y": 176,
+      "width": 328.078125,
+      "height": 40,
+      "top": 176,
+      "right": 369.078125,
+      "bottom": 216,
+      "left": 41
+    }
+  },
+  {
+    "tag": "FLT-SEMANTICS",
+    "role": null,
+    "ariaLabel": null,
+    "innerText": "Sort",
+    "rect": {
+      "x": 299.2939758300781,
+      "y": 181,
+      "width": 64.78125,
+      "height": 30,
+      "top": 181,
+      "right": 364.0752258300781,
+      "bottom": 211,
+      "left": 299.2939758300781
+    }
+  },
+  {
+    "tag": "FLT-SEMANTICS",
+    "role": "button",
+    "ariaLabel": null,
+    "innerText": "Sort",
+    "rect": {
+      "x": 299.2939758300781,
+      "y": 181,
+      "width": 64.78125,
+      "height": 30,
+      "top": 181,
+      "right": 364.0752258300781,
+      "bottom": 211,
+      "left": 299.2939758300781
+    }
+  },
+  {
+    "tag": "FLT-SEMANTICS",
+    "role": "button",
+    "ariaLabel": null,
+    "innerText": "New",
+    "rect": {
+      "x": 379.078125,
+      "y": 176,
+      "width": 101.921875,
+      "height": 40,
+      "top": 176,
+      "right": 481,
+      "bottom": 216,
+      "left": 379.078125
+    }
+  },
+  {
+    "tag": "FLT-SEMANTICS",
+    "role": "button",
+    "ariaLabel": null,
+    "innerText": "10/9/2026",
+    "rect": {
+      "x": 517.5,
+      "y": 176.5,
+      "width": 91.265625,
+      "height": 39,
+      "top": 176.5,
+      "right": 608.765625,
+      "bottom": 215.5,
+      "left": 517.5
+    }
+  },
+  {
+    "tag": "FLT-SEMANTICS",
+    "role": "button",
+    "ariaLabel": null,
+    "innerText": "12:35 PM",
+    "rect": {
+      "x": 610.7737426757812,
+      "y": 176.5,
+      "width": 77.984375,
+      "height": 39,
+      "top": 176.5,
+      "right": 688.7581176757812,
+      "bottom": 215.5,
+      "left": 610.7737426757812
+    }
+  },
+  {
+    "tag": "FLT-SEMANTICS",
+    "role": "group",
+    "ariaLabel": "Select Manager",
+    "innerText": "",
+    "rect": {
+      "x": 728,
+      "y": 176,
+      "width": 180,
+      "height": 40,
+      "top": 176,
+      "right": 908,
+      "bottom": 216,
+      "left": 728
+    }
+  },
+  {
+    "tag": "FLT-SEMANTICS",
+    "role": "radio",
+    "ariaLabel": "At Store",
+    "innerText": "",
+    "rect": {
+      "x": 21,
+      "y": 250,
+      "width": 619,
+      "height": 73,
+      "top": 250,
+      "right": 640,
+      "bottom": 323,
+      "left": 21
+    }
+  },
+  {
+    "tag": "FLT-SEMANTICS",
+    "role": "radio",
+    "ariaLabel": "At Home",
+    "innerText": "",
+    "rect": {
+      "x": 640,
+      "y": 250,
+      "width": 619,
+      "height": 73,
+      "top": 250,
+      "right": 1259,
+      "bottom": 323,
+      "left": 640
+    }
+  },
+  {
+    "tag": "FLT-SEMANTICS",
+    "role": null,
+    "ariaLabel": null,
+    "innerText": "Service\nProduct\nPackage\nMembership\nWallet Balance\nGift Card",
+    "rect": {
+      "x": 0,
+      "y": 324,
+      "width": 1280,
+      "height": 94,
+      "top": 324,
+      "right": 1280,
+      "bottom": 418,
+      "left": 0
+    }
+  },
+  {
+    "tag": "FLT-SEMANTICS",
+    "role": "button",
+    "ariaLabel": null,
+    "innerText": "Service",
+    "rect": {
+      "x": 41,
+      "y": 365,
+      "width": 97.28125,
+      "height": 32,
+      "top": 365,
+      "right": 138.28125,
+      "bottom": 397,
+      "left": 41
+    }
+  },
+  {
+    "tag": "FLT-SEMANTICS",
+    "role": "button",
+    "ariaLabel": null,
+    "innerText": "Product",
+    "rect": {
+      "x": 148.29580688476562,
+      "y": 365,
+      "width": 101,
+      "height": 32,
+      "top": 365,
+      "right": 249.29580688476562,
+      "bottom": 397,
+      "left": 148.29580688476562
+    }
+  },
+  {
+    "tag": "FLT-SEMANTICS",
+    "role": "button",
+    "ariaLabel": null,
+    "innerText": "Package",
+    "rect": {
+      "x": 259.3016052246094,
+      "y": 365,
+      "width": 107.578125,
+      "height": 32,
+      "top": 365,
+      "right": 366.8797302246094,
+      "bottom": 397,
+      "left": 259.3016052246094
+    }
+  },
+  {
+    "tag": "FLT-SEMANTICS",
+    "role": "button",
+    "ariaLabel": null,
+    "innerText": "Membership",
+    "rect": {
+      "x": 376.8873596191406,
+      "y": 365,
+      "width": 134.6875,
+      "height": 32,
+      "top": 365,
+      "right": 511.5748596191406,
+      "bottom": 397,
+      "left": 376.8873596191406
+    }
+  },
+  {
+    "tag": "FLT-SEMANTICS",
+    "role": "button",
+    "ariaLabel": null,
+    "innerText": "Wallet Balance",
+    "rect": {
+      "x": 521.5830078125,
+      "y": 365,
+      "width": 152.015625,
+      "height": 32,
+      "top": 365,
+      "right": 673.5986328125,
+      "bottom": 397,
+      "left": 521.5830078125
+    }
+  },
+  {
+    "tag": "FLT-SEMANTICS",
+    "role": "button",
+    "ariaLabel": null,
+    "innerText": "Gift Card",
+    "rect": {
+      "x": 683.6045532226562,
+      "y": 365,
+      "width": 109.625,
+      "height": 32,
+      "top": 365,
+      "right": 793.2295532226562,
+      "bottom": 397,
+      "left": 683.6045532226562
+    }
+  },
+  {
+    "tag": "FLT-SEMANTICS",
+    "role": "button",
+    "ariaLabel": "Discount\nCoupon Code\nCoupon will be applied only to eligible services.\nAppointment Notes",
+    "innerText": "%\nApply",
+    "rect": {
+      "x": 0,
+      "y": 438,
+      "width": 1280,
+      "height": 101,
+      "top": 438,
+      "right": 1280,
+      "bottom": 539,
+      "left": 0
+    }
+  },
+  {
+    "tag": "FLT-SEMANTICS",
+    "role": "button",
+    "ariaLabel": null,
+    "innerText": "%",
+    "rect": {
+      "x": 332,
+      "y": 470,
+      "width": 52,
+      "height": 35,
+      "top": 470,
+      "right": 384,
+      "bottom": 505,
+      "left": 332
+    }
+  },
+  {
+    "tag": "FLT-SEMANTICS",
+    "role": "button",
+    "ariaLabel": null,
+    "innerText": "Apply",
+    "rect": {
+      "x": 746.8101806640625,
+      "y": 474,
+      "width": 72.1875,
+      "height": 32,
+      "top": 474,
+      "right": 818.9976806640625,
+      "bottom": 506,
+      "left": 746.8101806640625
+    }
+  },
+  {
+    "tag": "FLT-SEMANTICS",
+    "role": null,
+    "ariaLabel": null,
+    "innerText": "Confirmed Booking",
+    "rect": {
+      "x": 49,
+      "y": 712.5,
+      "width": 135.578125,
+      "height": 19,
+      "top": 712.5,
+      "right": 184.578125,
+      "bottom": 731.5,
+      "left": 49
+    }
+  },
+  {
+    "tag": "FLT-SEMANTICS",
+    "role": null,
+    "ariaLabel": null,
+    "innerText": "TOTAL:",
+    "rect": {
+      "x": 1191.1702880859375,
+      "y": 715,
+      "width": 49.796875,
+      "height": 19,
+      "top": 715,
+      "right": 1240.9671630859375,
+      "bottom": 734,
+      "left": 1191.1702880859375
+    }
+  },
+  {
+    "tag": "FLT-SEMANTICS",
+    "role": "button",
+    "ariaLabel": null,
+    "innerText": "Review",
+    "rect": {
+      "x": 20,
+      "y": 744,
+      "width": 406.65625,
+      "height": 45,
+      "top": 744,
+      "right": 426.65625,
+      "bottom": 789,
+      "left": 20
+    }
+  },
+  {
+    "tag": "FLT-SEMANTICS",
+    "role": "button",
+    "ariaLabel": null,
+    "innerText": "Book Now",
+    "rect": {
+      "x": 436.6666564941406,
+      "y": 744,
+      "width": 406.6562194824219,
+      "height": 45,
+      "top": 744,
+      "right": 843.3228759765625,
+      "bottom": 789,
+      "left": 436.6666564941406
+    }
+  },
+  {
+    "tag": "FLT-SEMANTICS",
+    "role": "button",
+    "ariaLabel": null,
+    "innerText": "Checkout",
+    "rect": {
+      "x": 853.3333129882812,
+      "y": 744,
+      "width": 406.65618896484375,
+      "height": 45,
+      "top": 744,
+      "right": 1259.989501953125,
+      "bottom": 789,
+      "left": 853.3333129882812
+    }
+  }
+]

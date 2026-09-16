@@ -1,0 +1,71 @@
+"Test Scenario ID","Module / Feature","Test Scenario Name","Preconditions","Test Steps","Test Data","Expected Result","Spec File Reference","Automation Status"
+"TS_BV_001","Bookings Management","Verify Navigation and Switching to Bookings List View","User is authenticated on business portal","1. Login to https://devbiz.zylu.co/
+2. Click Bookings from sidebar or navigate to /#/bookings
+3. Click 'List View' toggle button if in Calendar mode","URL: /#/bookings","Bookings list table loads displaying columns for Booking ID, Date & Time, Customer, Staff, Status, Amount, and Actions","tests/Bookingview.spec.js","Automated (Passing)"
+"TS_BV_002","Bookings Management","Verify Row Inspection and Three-Dot Action Menu Options","At least one booking row exists in list","1. Identify target booking row
+2. Inspect and capture Date, Customer Name, Staff, Status, and Amount
+3. Click the three dots (Show menu) button on the row","Action: Three dots button","Popup menu opens displaying View Details, Generate Invoice, Share, Copy Booking, and Add Todo","tests/Bookingview.spec.js","Automated (Passing)"
+"TS_BV_003","Bookings Management","Verify View Details Screen and Consistency with List Row","Booking row menu is open","1. Click 'View Details' from popup menu
+2. Wait for Booking details dialog to display
+3. Verify modal title 'Booking' and Store info
+4. Compare Booking ID, Customer Name, Staff, Status, and Amount with list row","Row Data: #8440, Customer_5512, Completed, Dhruv Salat, ₹150.00","All details displayed in the modal match the list row data and backend API record with 100% accuracy","tests/Bookingview.spec.js","Automated (Passing)"
+"TS_PR_001","Package Redemption","Verify Customer Search and Incomplete Bookings Handling in New Sale","User is logged in on New Sale tab","1. Open New Sale > Booking tab
+2. Search customer by character queries until ≥3 results appear
+3. Select customer at index 2
+4. If 'Incomplete Bookings' modal appears, dismiss or continue appropriately","Query: 'r' / 'a'
+Customer index: 2","Customer is attached to sale; incomplete booking modal is handled without blocking the workflow","tests/package_redeem.spec.js","Automated (Passing)"
+"TS_PR_002","Package Redemption","Verify Selecting Package and Assigning Unique Staff Members","Customer selected, New Sale open","1. Click '+ Package'
+2. Filter for package matching 'Personalized' or 'Standard' (or fallback first available)
+3. Click checkbox and click Apply
+4. For every service row, select an unassigned staff member (ensure unique assignment per row)","Staff set: audi by rohan, Dhruv Salat, etc.","Package is added to sale, each row has a distinct assigned staff member, and Apply is successful","tests/package_redeem.spec.js","Automated (Passing)"
+"TS_PR_003","Package Redemption","Verify Package Checkout and Online Payment Completion","Package added with assigned staff","1. Click Checkout button
+2. Select Payment method as 'Online'
+3. Click Complete Payment
+4. Verify Invoice Generation screen is reached","Payment: Online","Sale is finalized, invoice is generated with unique Invoice Number, and payment status displays Paid","tests/package_redeem.spec.js","Automated (Passing)"
+"TS_MR_001","Membership Redemption","Verify Membership Selection and Customer Application","User is on New Sale > Booking tab","1. Search and select customer
+2. Handle incomplete booking dialog if present
+3. Click '+ Membership'
+4. Select first available active membership from catalog
+5. Click Apply","Membership: Standard / Premium membership","Membership is attached to customer booking and membership benefits/discounts are reflected","tests/membershipredeem.spec.js","Automated (Passing)"
+"TS_MR_002","Membership Redemption","Verify Membership Checkout with Unique Staff Assignment and Online Payment","Membership applied to sale","1. Assign distinct staff to each service row
+2. Click Checkout
+3. Choose Online payment
+4. Complete payment and verify invoice","Payment Method: Online","Transaction completes successfully; invoice confirms membership redemption with applied discount","tests/membershipredeem.spec.js","Automated (Passing)"
+"TS_CP_001","Coupons & Discounts","Verify Applying Promo Coupon During Sale Checkout","Active coupon exists in system","1. Create sale with service/product
+2. Enter valid coupon code in coupon input
+3. Click Apply Coupon
+4. Verify discount calculation on total payable amount","Coupon Code: SAVE20 / FLAT50","Coupon is successfully applied, discount is subtracted from total, and updated amount is displayed","tests/couponsreedem.spec.js","Automated (Passing)"
+"TS_PC_001","Product Sales","Verify Adding Random Product and Assigning Dedicated Staff Member","Catalog contains active products","1. Open New Sale > Product section
+2. Click '+ Product'
+3. Randomly select an in-stock product from the modal list
+4. Click Apply
+5. Assign a dedicated staff member to product commission","Product: Random selection from available catalog","Product is added as line item with correct unit price, tax, and assigned staff member","tests/product_checkout.spec.js","Automated (Passing)"
+"TS_PC_002","Product Sales","Verify Product Sale Checkout and Invoice Generation","Product line item added with staff","1. Click Checkout
+2. Review product summary and total price
+3. Select payment method and click Complete
+4. Verify invoice displays sold product details","Payment: Cash / Card / Online","Invoice is created showing product SKU, quantity, price, tax, and selling staff name","tests/product_checkout.spec.js","Automated (Passing)"
+"TS_NC_001","Customer Management","Verify End-to-End Registration of New Customer and First Sale","User on New Sale screen","1. Click '+ New Customer'
+2. Fill Customer Name, Phone Number, Email, and Gender
+3. Click Save Customer
+4. Add service and complete checkout","Name: Auto_Customer_<random>
+Phone: 91XXXXXXXXXX","New customer is registered in database, attached to the current sale, and receipt is linked to customer profile","tests/newcustomere2e.spec.js","Automated (Passing)"
+"TS_GW_001","Guest Walk-in","Verify Fast Walk-in Customer Booking and Checkout","Quick sale flow active","1. Select Walk-in / Guest mode
+2. Select quick service
+3. Assign available staff
+4. Process cash checkout","Type: Walk-in
+Payment: Cash","Sale completes without requiring mandatory customer profile creation, saving time for front-desk","tests/guest_walkin_checkE_E.spec.js","Automated (Passing)"
+"TS_IB_001","Incomplete Bookings","Verify Prompt and Resolution of Customer Incomplete Bookings","Customer has an existing open/draft booking","1. Select customer with incomplete booking history
+2. Verify 'Incomplete Bookings' modal triggers
+3. Verify options to Resume Booking or Discard / Dismiss
+4. Click Continue / Dismiss as appropriate","Customer: Customer with draft booking","Modal correctly alerts front-desk staff to avoid duplicate bookings and permits seamless continuation or dismissal","tests/incomplete_booking.spec.js","Automated (Passing)"
+"TS_DR_001","Analytics & Reports","Verify Daily Revenue Dashboard Calculation and Metric Cards","Completed sales exist for today","1. Navigate to Analytics / Daily Revenue (/#/reports)
+2. Verify Total Sales card
+3. Verify Payment breakdown (Cash, Card, Online, Memberships)
+4. Cross-verify with daily booking transactions sum","Date: Today","Daily Revenue matches the mathematical sum of all completed invoices and payment modes for the day","tests/Dailyrevnue.spec.ts","Automated (Passing)"
+"TS_SC_001","Staff Management","Verify Staff Summary and Commission Calculation for Completed Sales","Staff assigned to completed services/products","1. Navigate to Staff Summary / Commission screen
+2. Locate staff member (e.g. Dhruv Salat)
+3. Verify service count, product count, and earned commission percentage","Staff: Assigned employees","Commission is accurately computed based on configured rules (e.g., 10% on services, 5% on retail)","tests/staff_commission.spec.ts","Automated (Passing)"
+"TS_TP_001","Payment & Tips","Verify Adding Staff Tip During Checkout and Receipt Representation","Checkout screen open with total amount","1. In checkout payment screen, enter Tip amount
+2. Allocate tip to specific performing staff member
+3. Complete transaction
+4. Verify invoice line item for tip","Tip Amount: ₹50.00","Tip is added to total payment, allocated to the chosen staff member's report, and itemized on invoice","tests/tip.spec.js","Automated (Passing)"

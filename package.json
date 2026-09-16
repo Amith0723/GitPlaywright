@@ -1,0 +1,21 @@
+{
+  "name": "auto1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:product_checkout": "playwright test tests/product_checkout.spec.js --project=chromium",
+    "test:couponsreedem": "playwright test tests/couponsreedem.spec.js --project=chromium",
+    "test:package_consumption": "playwright test tests/package_consumption.spec.js --project=chromium"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^26.2.0",
+    "xlsx": "^0.18.5"
+  }
+}

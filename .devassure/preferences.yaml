@@ -1,0 +1,17 @@
+# Preferences Configuration
+# This file contains browser and test execution preferences for the agent
+# Documentation: https://www.npmjs.com/package/@devassure/cli
+# Example:
+# browsers:
+#   default:
+#     browser: chromium
+#     resolution: 1280 x 720
+#     headless: true
+# workers: 2
+
+browsers:
+  default:
+    browser: chromium
+    resolution: 1280 x 720
+    headless: false
+workers: 2
