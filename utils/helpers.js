@@ -7,16 +7,9 @@ export async function login(page, {
   email = 'test_automation_owner@zylu.co',
   password = 'mt@0Ho6~vn4b'
 } = {}) {
-  console.log('1. Checking login / session state...');
+  console.log('1. Logging in...');
   await page.goto('https://devbiz.zylu.co/');
   await page.waitForLoadState('domcontentloaded');
-
-  // If already authenticated via storageState session, return immediately
-  const isAlreadyHome = await page.waitForURL('**/#/home', { timeout: 3500 }).then(() => true).catch(() => false);
-  if (isAlreadyHome || page.url().includes('#/home')) {
-    console.log('✅ Session active (storageState) — skipping login form');
-    return;
-  }
 
   // Ensure "Email & Password" mode is active
   const emailTab = page.locator('button').filter({ hasText: /^Email & Password$/i }).first();

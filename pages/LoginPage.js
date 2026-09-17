@@ -1,4 +1,4 @@
-﻿// @ts-check
+// @ts-check
 import { expect } from '@playwright/test';
 
 export class LoginPage {
@@ -30,13 +30,8 @@ export class LoginPage {
     email = 'test_automation_owner@zylu.co',
     password = 'mt@0Ho6~vn4b'
   } = {}) {
-    console.log('1. Checking login / session state...');
+    console.log('1. Logging in...');
     await this.goto();
-
-    if (await this.isSessionActive()) {
-      console.log('✅ Session active (storageState) — skipping login form');
-      return;
-    }
 
     if (await this.emailTab.isVisible().catch(() => false)) {
       await this.emailTab.click().catch(() => {});
