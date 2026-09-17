@@ -1,0 +1,29 @@
+{
+  "playwright.configFile": "config/playwright.config.ts",
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "files.autoSave": "onFocusChange",
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/node_modules": false,
+    "**/playwright-report": false,
+    "**/test-results": false
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/playwright-report": true,
+    "**/test-results": true,
+    "**/downloads": true,
+    "**/.auth": true
+  },
+  "typescript.suggest.completeFunctionCalls": true,
+  "typescript.preferences.includePackageJsonAutoImports": "auto"
+}

@@ -1,0 +1,42 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "npm",
+      "script": "test:web",
+      "problemMatcher": [],
+      "label": "Test: Web (Playwright)",
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      }
+    },
+    {
+      "type": "npm",
+      "script": "test:api",
+      "problemMatcher": [],
+      "label": "Test: API Contract Tests",
+      "group": "test"
+    },
+    {
+      "type": "npm",
+      "script": "test:cross",
+      "problemMatcher": [],
+      "label": "Test: Cross-System Integration",
+      "group": "test"
+    },
+    {
+      "type": "npm",
+      "script": "test:visual",
+      "problemMatcher": [],
+      "label": "Test: Visual Regression",
+      "group": "test"
+    },
+    {
+      "type": "npm",
+      "script": "clean",
+      "problemMatcher": [],
+      "label": "Utility: Clean Test Artifacts"
+    }
+  ]
+}
