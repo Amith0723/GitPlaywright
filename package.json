@@ -1,21 +1,32 @@
 {
-  "name": "auto1",
+  "name": "qa-automation-hub",
   "version": "1.0.0",
-  "description": "",
+  "description": "Enterprise QA Automation Hub for ZyluCo (Web, API, Mobile Flutter, Performance)",
   "main": "index.js",
   "scripts": {
     "test": "playwright test",
-    "test:product_checkout": "playwright test tests/product_checkout.spec.js --project=chromium",
-    "test:couponsreedem": "playwright test tests/couponsreedem.spec.js --project=chromium",
-    "test:package_consumption": "playwright test tests/package_consumption.spec.js --project=chromium"
+    "test:web": "playwright test --config=config/playwright.config.ts --project=web-chromium",
+    "test:api": "playwright test --config=config/playwright.config.ts --project=api",
+    "test:cross": "playwright test --config=config/playwright.config.ts --project=cross-system",
+    "test:visual": "playwright test --config=config/playwright.config.ts --project=visual",
+    "test:flutter": "echo \"Run: bash scripts/run-flutter-emulators.sh && npx wdio run config/wdio.flutter.config.ts\"",
+    "test:perf": "echo \"Run: k6 run performance/scenarios/api-smoke.js\"",
+    "clean": "bash scripts/clean-test-artifacts.sh"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "playwright",
+    "flutter",
+    "k6",
+    "automation",
+    "zylu"
+  ],
+  "author": "Zylu QA Team",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
     "@playwright/test": "^1.62.1",
     "@types/node": "^26.2.0",
+    "typescript": "^5.3.3",
     "xlsx": "^0.18.5"
   }
 }

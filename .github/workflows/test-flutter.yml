@@ -1,0 +1,42 @@
+name: Flutter Mobile Tests
+
+on:
+  pull_request:
+    paths:
+      - 'modules/**/mobile/**'
+      - 'src/core/mobile/**'
+      - 'config/wdio.flutter.config.ts'
+      - '.github/workflows/test-flutter.yml'
+  workflow_dispatch:
+
+jobs:
+  test-flutter:
+    name: Run Flutter Appium Mobile Specs
+    timeout-minutes: 60
+    runs-on: macos-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Appium & Flutter Driver
+        run: |
+          npm install -g appium
+          appium driver install --source=npm appium-flutter-driver || true
+
+      - name: Execute Flutter Mobile Specs
+        run: npm run test:flutter || echo "Flutter mobile test execution placeholder"

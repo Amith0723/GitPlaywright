@@ -1,0 +1,24 @@
+name: Performance Tests
+
+on:
+  schedule:
+    - cron: '0 3 * * 0' # Weekly on Sundays at 3:00 AM UTC
+  workflow_dispatch:
+
+jobs:
+  test-performance:
+    name: Run k6 Smoke & Load Tests
+    timeout-minutes: 30
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Setup k6
+        uses: grafana/setup-k6-action@v1
+
+      - name: Run k6 API Smoke Test
+        run: k6 run performance/scenarios/api-smoke.js
+
+      - name: Run k6 Booking Burst Test
+        run: k6 run performance/scenarios/booking-burst.js
