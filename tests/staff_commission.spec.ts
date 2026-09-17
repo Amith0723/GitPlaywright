@@ -243,9 +243,4 @@ test('Staff Commission report - all employees x all date ranges', async ({ page 
   } else {
     console.log('❌ One or both downloads failed');
   }
-
-  // ===== Close the browser =====
-  await page.close();
-  await page.context().close();
-  await page.context().browser()?.close();
 });
