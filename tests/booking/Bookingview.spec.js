@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { login } from './helpers.js';
+import { login } from '../../utils/helpers.js';
 
 test('Booking View Flow: Login, Open Bookings List View, Inspect Row, Click Three Dots, View Details, and Validate', async ({ page }) => {
   test.setTimeout(180000);

@@ -4,7 +4,7 @@ import {
   openNewSaleBooking,
   selectCustomer,
   selectMultipleServices
-} from './helpers.js';
+} from '../../utils/helpers.js';
 
 test.setTimeout(240000);
 

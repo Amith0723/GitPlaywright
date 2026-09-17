@@ -3,7 +3,7 @@ import {
   login,
   openNewSaleBooking,
   selectCustomer
-} from './helpers.js';
+} from '../../utils/helpers.js';
 
 // Random Bangalore addresses generator so it's different every single run
 const BANGALORE_AREAS = [

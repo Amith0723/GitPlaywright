@@ -6,7 +6,7 @@ import {
   selectMultipleServices,
   assignDifferentStaffToRows,
   proceedToCheckout
-} from './helpers.js';
+} from '../../utils/helpers.js';
 
 test('Package Consumption Flow: Login, Service, Add Tax, Discount, Checkout and Add Product Consumption in Invoice', async ({ page }) => {
   test.setTimeout(240000);

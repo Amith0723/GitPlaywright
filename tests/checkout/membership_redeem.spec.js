@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { login, openNewSaleBooking, setPaymentAmount, handleOptionalPopups } from './helpers.js';
+import { login, openNewSaleBooking, setPaymentAmount, handleOptionalPopups } from '../../utils/helpers.js';
 
 test('Membership Redeem Flow: Select Customer, Pick Membership, Assign Staff, Checkout, New Sale, Re-search Customer, Expand Down Arrow, Redeem, Different Staff, Checkout', async ({ page }) => {
   test.setTimeout(240000);

@@ -8,7 +8,7 @@ import {
   getPaymentDue,
   setPaymentAmount,
   handleOptionalPopups
-} from './helpers.js';
+} from '../../utils/helpers.js';
 
 test.setTimeout(180000);
 

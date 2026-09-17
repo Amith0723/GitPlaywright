@@ -1,5 +1,5 @@
 import { test } from '@playwright/test';
-import { login, openNewSaleBooking, selectCustomer } from './helpers.js';
+import { login, openNewSaleBooking, selectCustomer } from '../../utils/helpers.js';
 
 test('Dump DOM inside Products modal', async ({ page }) => {
   test.setTimeout(120000);

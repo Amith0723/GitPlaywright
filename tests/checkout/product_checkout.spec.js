@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { login, openNewSaleBooking, selectCustomer, setPaymentAmount, handleOptionalPopups } from './helpers.js';
+import { login, openNewSaleBooking, selectCustomer, setPaymentAmount, handleOptionalPopups } from '../../utils/helpers.js';
 
 test('Select Random Product, Assign Staff, Add Notes, Checkout and Verify Invoice', async ({ page }) => {
   test.setTimeout(180000);

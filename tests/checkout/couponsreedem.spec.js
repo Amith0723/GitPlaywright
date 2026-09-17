@@ -8,7 +8,7 @@ import {
   proceedToCheckout,
   getPaymentDue,
   handleOptionalPopups
-} from './helpers.js';
+} from '../../utils/helpers.js';
 
 test('Create Unique Coupon, Redeem in New Sale, Checkout, and Validate Invoice Amount', async ({ page }) => {
   test.setTimeout(180000);

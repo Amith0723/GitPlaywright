@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { login } from './helpers.js';
+import { login } from '../../utils/helpers.js';
 
 test.setTimeout(240000);
 
